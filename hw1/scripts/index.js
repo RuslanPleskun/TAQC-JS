@@ -43,7 +43,7 @@ alert("Please provide on the next promts the number of years, months and day for
 let years = prompt("Number of years:");
 let months = prompt("Number of months:");
 let days = prompt("Number of days:");
-const result = () => {
+let result = () => {
   const daySeconds = 24 * 60 * 60;
   return 365 * years * daySeconds + 30 * months * daySeconds + days * daySeconds;
 };
