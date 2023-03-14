@@ -59,7 +59,7 @@ if(!(isNaN(a) || isNaN(b) || (isNaN(c)))) {
 
 // Task 7
 let currentTime = new Date().getHours();
-if(currentTime >= 23 && currentTime < 5) {
+if(currentTime === 23 || (currentTime >= 0 && currentTime < 5)) {
   alert("Good night");
 } else if(currentTime >= 5 && currentTime < 11) {
   alert("Good morning");
@@ -72,7 +72,7 @@ if(currentTime >= 23 && currentTime < 5) {
 }
 
 switch(true) {
-  case(currentTime >= 23 && currentTime < 5):
+  case(currentTime === 23 || (currentTime >= 0 && currentTime < 5)):
     alert("Good night");
     break;
   case(currentTime >= 5 && currentTime < 11):
