@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Automation</title>
+</head>
+<body>
+  <div class="task2">
+    <h1>Task 2</h1>
+    <p id ='text'>I learn JavaScript events!</p>
+    <div>
+	    <button type="button" onclick="changeCSS()" class=".btn">Change style!</button>
+    </div>
+  </div>
+
+  <div class="task3">
+    <h1>Task 3</h1>
+    <div class="container">
+      <button onclick="makeBlue()" class="btn1">Click to make the page blue</button>
+      <button ondblclick="makePink()" class="btn2">Double-click to make the page pink</button>
+      <button onmousedown="makeBrown(true)" onmouseup="makeBrown(false)" class="btn3">Click and hold to make the page brown</button>
+      <a href="#" class="link">Hover over to make the page yellow</a>
+    </div>
+  </div>
+
+  <div class="task4">
+    <h1>Task 4</h1>
+    <select id="dropdown">
+      <option value="value1">Peter</option>
+      <option value="value2">John</option>
+      <option value="value3">Alise</option>
+      <option value="value4">Alex</option>
+      <option value="value5">Iren</option>
+    </select>
+    <button onclick="removeSelected()">Choose and Delete</button>
+  </div>
+
+  <div class="task5">
+    <h1>Task 5</h1>
+    <button onclick="clickButton()" class="live">Live button!</button>
+    <p class="customText"></p>
+  </div>
+
+  <div class="task6">
+    <h1>Task 6</h1>
+    <p class="size"></p>
+  </div>
+
+  <div class="task7">
+    <h1>Task 7</h1>
+    <select name="country" id="country">
+      <option value="ger">Germany</option>
+      <option value="usa">USA</option>
+      <option value="ukr">Ukraine</option>
+    </select>
+    
+    <select name="cities" id="cities"></select>
+    
+    <p id="selectedCountryCity"></p>
+  </div>
+  
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
