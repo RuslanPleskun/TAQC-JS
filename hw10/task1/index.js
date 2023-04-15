@@ -12,7 +12,6 @@ http.createServer((request, response) => {
                   <p>Current work directory: ${path.dirname(__filename)}</p>
                   <p>Server file name: ${path.basename(__filename)}</p></div>`);
   response.end();
-
 }).listen(3000);              // 3000 port was used since port '5000' is already in use for some reason
 
 console.log("Server is running at localhost:3000");
