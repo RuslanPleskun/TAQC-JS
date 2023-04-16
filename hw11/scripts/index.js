@@ -24,15 +24,15 @@ function getaAuthors() {
         alert(`Error ${ajaxRequest.status}: ${ajaxRequest.statusText}`);
       } else {
         const btn = document.querySelector('.authors');
-		    const lst = document.createElement('ul');
-		    lst.className = 'authors-list';
-		    const values = JSON.parse(ajaxRequest.responseText);
-		    for (const value of values) {
-			    const listItem = document.createElement('li');
-			    listItem.textContent = value.author;
-			    lst.appendChild(listItem);
-		    }
-		    btn.parentNode.replaceChild(lst, btn);
+	const lst = document.createElement('ul');
+	lst.className = 'authors-list';
+	const values = JSON.parse(ajaxRequest.responseText);
+	for (const value of values) {
+		const listItem = document.createElement('li');
+		listItem.textContent = value.author;
+		lst.appendChild(listItem);
+	}
+	btn.parentNode.replaceChild(lst, btn);
       }
     }
   };
