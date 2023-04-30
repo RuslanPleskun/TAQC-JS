@@ -22,7 +22,7 @@ swapText("Java Script");
 // Task 5
 const validateCardNumber = (cardNumber) => { 
   console.log(/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}/.test(cardNumber) ? "Success" : "Entered card number does not match the pattern, please try again!");
- };
+};
 validateCardNumber("9999-9999-999a-9999");
 validateCardNumber("9999-9999-9999-9999");
 
