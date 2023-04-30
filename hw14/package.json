@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "selenium-test": "node ./node_modules/.bin/mocha ./hw14/tests --timeout 10000"
+    "test": "node ./node_modules/.bin/mocha ./tests --timeout 10000"
   },
   "repository": {
     "type": "git",
